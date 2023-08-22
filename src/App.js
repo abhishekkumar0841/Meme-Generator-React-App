@@ -1,23 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import RandomMeme from './components/RandomMeme';
+import SearchMeme from './components/SearchMeme';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='flex h-screen w-screen gap-5 justify-between items-center bg-indigo-950 pt-4 pb-4 pl-8 pr-8'>
+        <RandomMeme/>
+        <SearchMeme/>
     </div>
   );
 }
