@@ -14,7 +14,7 @@ const SearchMeme = () => {
             loading ? <Loader/> : <img className='w-full h-full' src={memesUrl} alt="" />
         }
       </div>
-      <form onSubmit={submitHandler} className='w-full flex justify-center sm:justify-between gap-3 flex-wrap'>
+      <form onSubmit={submitHandler} className='w-full flex justify-center sm:justify-around gap-3 flex-wrap'>
         <input className='w-[60%] outline-none text-center font-bold tracking-wider rounded-md pt-1 pb-1 pl-4 pr-4 ' placeholder='Search Memes' type="text" value={input} onChange={changeHandler} />
         <button className='bg-white pt-1 pb-1 pl-4 pr-4 font-bold tracking-wider rounded-md'>Search Meme</button>
       </form>
